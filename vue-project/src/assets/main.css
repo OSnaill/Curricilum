@@ -3,3 +3,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family:'Ysabeau';
+  src: url('./polices/YsabeauSC.ttf');
+}
+@font-face {
+  font-family:'Montserrat';
+  src: url('./polices/Montserrat.ttf');
+}
+
+@layer base {
+  *{
+    font-family: 'Montserrat';
+  }
+  h1, h2, h3{
+    font-family: 'Ysabeau';
+  }
+
+  h1{
+    font-size: 1.2em;
+  }
+  h2{
+    font-size: 1.1em;
+  }
+  h3{
+    font-size: 1.05em;
+  }
+}
