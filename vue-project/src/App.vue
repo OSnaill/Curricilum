@@ -6,7 +6,6 @@ import Header from '/src/components/header/Header.vue'
 <template>
   <Header>
   </Header>
-  <p class="z-20">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
   <RouterView />
 </template>
 

@@ -1,5 +1,6 @@
 <template>
-    <header class="flex flex-row p-[10px] justify-between border-b-[0.1px] border-solid  border-dark shadow-xl sticky top-0 bg-white">
+    <header class="fixed top-0 z-10 w-full">
+        <section class="flex flex-row p-[10px] justify-between border-b-[0.1px] border-solid  border-dark shadow-xl bg-white">
         <div class="flex flex-row items-center gap-[10px]">
             <div class="lg:hidden">
                 <svg v-if="isNavOpen == false" @click="openNav()"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[35px] h-[35px]">
@@ -24,10 +25,18 @@
                 <LinkedinIcon class="w-[20px] h-[20px]"/>
             </a>
         </div>
+        </section>
+        <section class="" >
+            <div class="w-screen bg-black opacity-30 h-screen absolute lg:hidden" @click="closeNav()" v-if="isNavOpen" >
+            </div>
+            <transition name="slide-fade" class="lg:hidden relative">
+                <NavDrawer v-if="isNavOpen" class=" left-0 top-0" :isOpen="isNavOpen" />
+            </transition>
+        </section>
     </header>
-    <transition name="slide-fade">
-        <NavDrawer v-if="isNavOpen" class=" sticky left-0 top-0" />
-    </transition>
+    <div class="h-[80px]">
+
+    </div>
 </template>
 <script>
 import GitIcon from './icons/GitIcon.vue';
