@@ -23,11 +23,29 @@
 
   h1{
     font-size: 1.2em;
+    font-weight: bold;
   }
   h2{
     font-size: 1.1em;
   }
   h3{
     font-size: 1.05em;
+  }
+}
+
+@layer utilities {
+  .pres{
+    background-image: url('./img/rectangle-pres.png');
+  }
+
+  .try{
+    position: -webkit-sticky;
+    position: fixed;
+    height: 20px;
+  }
+
+  .page{
+    max-height: 100vh;
+    overflow-y: scroll;
   }
 }

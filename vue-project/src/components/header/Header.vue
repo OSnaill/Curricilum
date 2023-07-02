@@ -2,7 +2,7 @@
     <header class="fixed top-0 z-10 w-full">
         <section class="flex flex-row p-[10px] justify-between border-b-[0.1px] border-solid  border-dark shadow-xl bg-white">
         <div class="flex flex-row items-center gap-[10px]">
-            <div class="lg:hidden">
+            <div class="xl:hidden">
                 <svg v-if="isNavOpen == false" @click="openNav()"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[35px] h-[35px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -27,14 +27,14 @@
         </div>
         </section>
         <section class="" >
-            <div class="w-screen bg-black opacity-30 h-screen absolute lg:hidden" @click="closeNav()" v-if="isNavOpen" >
+            <div class="w-screen bg-black opacity-30 h-screen absolute xl:hidden" @click="closeNav()" v-if="isNavOpen" >
             </div>
-            <transition name="slide-fade" class="lg:hidden relative">
+            <transition name="slide-fade" class="xl:hidden relative">
                 <NavDrawer v-if="isNavOpen" class=" left-0 top-0" :isOpen="isNavOpen" />
             </transition>
         </section>
     </header>
-    <div class="h-[80px]">
+    <div class="h-[70px]">
 
     </div>
 </template>
