@@ -1,6 +1,6 @@
 <template>
-    <div class="w-[300px] border-2 border-solid border-black rounded-lg p-[20px] flex flex- justify-around gap-[20px]">
-        <img :src="newUrl" src="../assets/img/html.png" alt="html" class="h-[30px]">
+    <div class="border-2 w-[280px] md:w-[320px] 2xl:w-[350px] border-solid border-black rounded-lg p-[20px] flex flex-row items-center justify-around gap-[20px]">
+        <img :src="newUrl"  alt="html" class="h-[60px]">
         <h3 class=""> {{name}} </h3>
         <div class="flex flex-row gap-[10px] items-center">
             <div v-for="value in rankCalc" :class="value == 'yes' ? 'bg-mint' : ''" class="w-[12px] h-[12px] border-2 border-solid rounded-sm } "  :key="index"></div>

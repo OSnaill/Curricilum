@@ -1,7 +1,10 @@
 <script>
-import TechnoCard from '../components/TechnoCard.vue';
+import TechnoList from '../components/TechnoList.vue';
+import SoftSkillsList from '../components/SoftSkillsList.vue';
+import LoisirsList from '../components/LoisirsList.vue';
+
 export default {
-  components: {TechnoCard},
+  components: {TechnoList, SoftSkillsList, LoisirsList},
   methods:{
     scrollTo(id){
       console.log(id);
@@ -21,7 +24,7 @@ export default {
         <a href="#" class="p-[20px] hover:bg-dark hover:text-mint "> Projets </a>
         <a href="#" class="p-[20px] hover:bg-dark hover:text-mint "> Parcours </a>
       </div>
-      <div class="col-span-4 xl:page xl:absolute right-0 xl:w-4/5">
+      <div class="col-span-4 xl:page xl:absolute overflow-none right-0 xl:w-4/5">
       <section class="bg-bottom p-[20px] bg-no-repeat bg-dark ">
         <article class="flex flex-col justify-center align-baseline max-w-[600px] m-auto">
           <div class="p-[20px]" id="pres">
@@ -35,15 +38,11 @@ export default {
           </div>
         </article>
       </section>
-      <section>
-        <h1 class="p-[20px] text-center" id="tech"> Technologies </h1>
-        <article class="p-[20px] flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3  gap-[20px] m-auto items-center place-items-center max-w-[1440px]">
-          <TechnoCard :imag="'html.png'" :name='"HTML"' :rank="3" />
-          <TechnoCard :imag="'html.png'" :name='"CSS"' :rank="5" />
-          <TechnoCard :imag="'html.png'" :name='"JS"' :rank="5" />
-          <TechnoCard :imag="'html.png'" :name='"PHP"' :rank="5" />
-        </article>
-      </section>
+      <TechnoList />
+      <aside class="md:grid grid-cols-2 lg:grid-cols-2">
+        <SoftSkillsList />
+        <LoisirsList />
+      </aside>
     </div>
   </main>
 </template>
