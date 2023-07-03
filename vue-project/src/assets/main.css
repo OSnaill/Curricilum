@@ -1,0 +1,51 @@
+@import './reset.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family:'Ysabeau';
+  src: url('./polices/YsabeauSC.ttf');
+}
+@font-face {
+  font-family:'Montserrat';
+  src: url('./polices/Montserrat.ttf');
+}
+
+@layer base {
+  *{
+    font-family: 'Montserrat';
+  }
+  h1, h2, h3{
+    font-family: 'Ysabeau';
+  }
+
+  h1{
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 1.1em;
+  }
+  h3{
+    font-size: 1.05em;
+  }
+}
+
+@layer utilities {
+  .pres{
+    background-image: url('./img/rectangle-pres.png');
+  }
+
+  .try{
+    position: -webkit-sticky;
+    position: fixed;
+    height: 20px;
+  }
+
+  .page{
+    max-height: 100vh;
+    overflow-y: scroll;
+  }
+}
