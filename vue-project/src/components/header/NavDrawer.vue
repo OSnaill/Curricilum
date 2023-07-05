@@ -1,15 +1,25 @@
 <template>
     <div class="relative">
         <nav class=" absolute top-0 w-2/3 h-screen border-r-[0.1px] border-solid shadow-2xl bg-white flex flex-col">
-           <a href="#" class="p-[20px]  bg-white text-black  hover:bg-dark hover:text-mint duration-[0.2] "> Présentation </a>
-           <a href="#" class="p-[20px]  bg-white text-black  hover:bg-dark hover:text-mint duration-[0.2] "> Technologies </a>
-           <a href="#" class="p-[20px]  bg-white text-black  hover:bg-dark hover:text-mint duration-[0.2] "> Soft Skills et Passions </a>
-           <a href="#" class="p-[20px]  bg-white text-black  hover:bg-dark hover:text-mint duration-[0.2] "> Projets et parcours </a>
+            <a href="#" id="pres-link" class="p-[20px]  font-bold flex flex-row gap-[20px] hover:bg-dark hover:text-mint " @click.prevent="scrollTo('pres')">
+                <GitIcon class="w-[20px] h-[20px] opacity-80"/> 
+                <p> Github </p>
+            </a>
+            <a href="#" id="pres-link" class="p-[20px]  font-bold flex flex-row gap-[20px] hover:bg-dark hover:text-mint " @click.prevent="scrollTo('pres')">
+                <LinkedinIcon class="w-[20px] h-[20px] opacity-80"/> 
+                <p> Linkedin </p>
+            </a>
         </nav>
     </div>
 </template>
 <script>
+import GitIcon from './icons/GitIcon.vue';
+import LinkedinIcon from './icons/LinkedinIcon.vue';
+
 export default {
+    components: {
+        GitIcon, LinkedinIcon,
+    },
     props: {
         isOpen: Boolean,
     },

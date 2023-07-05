@@ -1,7 +1,7 @@
 <template>
-    <div class="p-[20px] flex flex-col gap-[20px] items-center bg-white rounded-lg border-2 border-solid">
+    <div class="p-[20px] flex flex-col gap-[20px] items-center bg-white rounded-lg border shadow-xl border-solid">
         <img :src="newUrl"  alt="html" class="h-[60px]">
-        <h3> {{ name }} </h3>
+        <p class="text-sm"> {{ name }} </p>
     </div>
 </template>
 <script>

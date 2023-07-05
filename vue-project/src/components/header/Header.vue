@@ -17,9 +17,9 @@
                 <h3> Développeur Web </h3>
             </div>
         </div>
-        <div class="flex flex-row items-center justify-center gap-[20px]">
+        <div class="flex-row items-center justify-center gap-[20px] hidden xl:flex">
             <a href="#">
-                <GitIcon class="w-[20px] h-[20px] fill-cyan-200 "/> 
+                <GitIcon class="w-[20px] h-[20px]"/>
             </a>
             <a href="#">
                 <LinkedinIcon class="w-[20px] h-[20px]"/>
@@ -57,7 +57,12 @@ export default {
         },
         closeNav(){
             this.isNavOpen = false;
-        }
+        },
+        scrollTo(id){
+            console.log(id);
+            let elementToScroll = document.getElementById(id);
+            elementToScroll.scrollIntoView({behavior:'smooth', block:'center'});
+        },
     }
 }
 </script>

@@ -22,14 +22,32 @@
   }
 
   h1{
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: bold;
   }
   h2{
-    font-size: 1.1em;
+    font-size: 1.3em;
+    font-weight: bold;
   }
   h3{
-    font-size: 1.05em;
+    font-size: 1.2em;
+  }
+
+  p{
+    font-weight: 600;
+    font-size: em;
+    color: #324749;
+  }
+  @screen lg {
+    h1{
+      font-size: 1.8em;
+    }
+    h2{
+      font-size: 1.4em;
+    }
+    h3{
+      font-size: 1.2em;
+    }
   }
 }
 
@@ -41,7 +59,10 @@
   .try{
     position: -webkit-sticky;
     position: fixed;
-    height: 20px;
+    height: 100vh;
+    top: 90px;
+    border-right: 1px solid lightgray;
+    font-weight: bold;
   }
 /* 
   .page{
