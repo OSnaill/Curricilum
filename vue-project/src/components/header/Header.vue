@@ -1,6 +1,6 @@
 <template>
     <header class="fixed top-0 z-10 w-full">
-        <section class="flex flex-row p-[10px] justify-between border-b-[0.1px] border-solid  border-dark shadow-xl bg-white">
+        <section class="flex flex-row p-[20px] justify-between bg-white">
         <div class="flex flex-row items-center gap-[10px]">
             <div class="xl:hidden">
                 <svg v-if="isNavOpen == false" @click="openNav()"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[35px] h-[35px]">
@@ -11,10 +11,9 @@
                 </svg>
             </div>
             <div>
-                <h1 class="font-bold">
-                    SOUQUIERE Boris
-                </h1>
-                <h3> Développeur Web </h3>
+                <h2 class="font-bold">
+                    BorisDevWeb
+                </h2>
             </div>
         </div>
         <div class="flex-row items-center justify-center gap-[20px] hidden xl:flex">

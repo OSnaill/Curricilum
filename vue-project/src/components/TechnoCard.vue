@@ -1,10 +1,10 @@
 <template>
-    <div class=" hover:scale-105 duration-[0.05s] p-[20px] border-2  w-[115px] h-[140px]  border-solid shadow-lg rounded-lg  flex flex-col items-center justify-around bg-white">
-        <img :src="newUrl"  alt="html" class=" w-[35px]">
-        <p class="text-sm font-bold"> {{name}} </p>
-        <div class="flex flex-row gap-[8px] items-center">
-            <div v-for="value in rankCalc" :class="value == 'yes' ? 'bg-mint' : 'bg-dark'" class="w-[10px] h-[7px] border-2 border-solid rounded-sm } "  :key="index"></div>
-        </div>
+    <div class=" hover:scale-105 duration-[0.05s] md:p-[20px]  rounded-lg  flex flex-col items-center gap-[10px] bg-white">
+        <img :src="newUrl"  alt="html" class=" w-[40px] h-[40px] object-contain">
+        <p class="text-xs "> {{name}} </p>
+        <!-- <div class="flex flex-row gap-[5px] items-center">
+            <div v-for="value in rankCalc" :class="value == 'yes' ? 'bg-mint' : 'bg-dark'" class="w-[5px] h-[4px] rounded-sm } "  :key="index"></div>
+        </div> -->
     </div>
 </template>
 <script>

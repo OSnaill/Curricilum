@@ -14,23 +14,27 @@
 }
 
 @layer base {
-  *{
+  *, header{
     font-family: 'Montserrat';
+    font-size: 12px;
   }
   h1, h2, h3{
     font-family: 'Ysabeau';
+    font-weight: bold;
   }
 
   h1{
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 2.5em;
+    
   }
   h2{
-    font-size: 1.3em;
-    font-weight: bold;
+    font-size: 1.5em;
+    
   }
   h3{
-    font-size: 1.2em;
+    font-size: 1.25em;
+    
+    text-decoration: underline;
   }
 
   p{
@@ -38,15 +42,9 @@
     font-size: em;
     color: #324749;
   }
-  @screen lg {
-    h1{
-      font-size: 1.8em;
-    }
-    h2{
-      font-size: 1.4em;
-    }
-    h3{
-      font-size: 1.2em;
+  @screen md {
+    *, header{
+      font-size: 14px;
     }
   }
 }

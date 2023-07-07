@@ -1,5 +1,7 @@
 <script>
 import TechnoList from '../components/TechnoList.vue';
+import PortfolioList from '../components/PortfolioList.vue';
+import Apropos from '../components/APropos.vue';
 import SoftSkillsList from '../components/SoftSkillsList.vue';
 import LoisirsList from '../components/LoisirsList.vue';
 
@@ -15,7 +17,7 @@ export default {
       parcours: document.getElementById('parcours-link'),
     }
   },
-  components: {TechnoList, SoftSkillsList, LoisirsList},
+  components: {TechnoList, SoftSkillsList, LoisirsList, PortfolioList, Apropos},
   created () {
     window.addEventListener('scroll', this.handleScroll);
     document.addEventListener('DOMContentLoaded', this.checkWindowPosition);
@@ -28,74 +30,31 @@ export default {
       console.log(id);
       let elementToScroll = document.getElementById(id);
       elementToScroll.scrollIntoView({behavior:'smooth', block:'start'});
-    },
-    handleScroll (event) {
-      // Any code to be executed when the window is scrolled
-      console.log(scrollY);
-      if(scrollY < 400)
-      {
-        document.getElementById('pres-link').classList.add('bg-dark', 'text-mint')
-        document.getElementById('comp-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('soft-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('project-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('parcours-link').classList.remove('bg-dark', 'text-mint')
-      }
-      if(scrollY > 400)
-      {
-        document.getElementById('pres-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('comp-link').classList.add('bg-dark', 'text-mint')
-        document.getElementById('soft-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('project-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('parcours-link').classList.remove('bg-dark', 'text-mint')
-      }
-      if(scrollY > 850)
-      {
-        document.getElementById('pres-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('comp-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('soft-link').classList.add('bg-dark', 'text-mint')
-        document.getElementById('project-link').classList.remove('bg-dark', 'text-mint')
-        document.getElementById('parcours-link').classList.remove('bg-dark', 'text-mint')
-      }
-    },
-    checkWindowPosition() {
-      if(scrollY < 300)
-      {
-        document.getElementById('pres-link').classList.add('bg-dark','text-mint')
-      }
     }
   }
 }
 </script>
 <template>
-  <main class="xl:grid relative">
-    <div class="hidden try left-0 xl:w-1/5 xl:flex flex-col">
-      <a href="#" id="pres-link" class="p-[20px] hover:bg-dark hover:text-mint " @click.prevent="scrollTo('pres')"> Présentation </a>
-      <a href="#" id="comp-link" class="p-[20px] hover:bg-dark hover:text-mint " @click.prevent="scrollTo('tech')"> Compétences </a>
-      <a href="#" id="soft-link" class="p-[20px] hover:bg-dark hover:text-mint "> Soft Skils & Centres intérêts </a>
-      <a href="#" id="project-link"  class="p-[20px] hover:bg-dark hover:text-mint "> Projets </a>
-      <a href="#" id="parcours-link" class="p-[20px] hover:bg-dark hover:text-mint "> Parcours </a>
-    </div>
-    <div class="col-span-4 xl:page xl:absolute overflow-none top-[80px] right-0 xl:w-4/5">
-      <section class="bg-dar p-[20px] ">
-        <article class="flex flex-col justify-center align-baseline max-w-[700px] m-auto">
-          <div class="p-[20px]" id="pres">
-            <img src="../assets/img/moi.jpg" alt="" class=" w-[200px] rounded-md shadow-xl m-auto" id="pres">
+  <main class="">
+    <article class="p-[20px] flex flex-col items-center lg:flex-row h-[750px] max-w-[1280px] m-auto">
+        <img src="../assets/img/moi.jpg" alt="" class=" w-[200px] h-[200px] sm:w-[275px] sm:h-[275px] object-cover rounded-full shadow-2xl border-4 border-solid border-dark m-auto" id="pres">
+        <div class=" flex flex-col gap-[20px] text-black max-w-[375px] p-[20px] m-auto">
+          <h1 class=""> Hello There ! Je m'appelle <span class="text-mint">Souquière Boris </span></h1>
+          <p class="text-justify ">
+            Je suis un développeur web full stack situé en bretagne. 👋
+          </p>
+          <div class="flex flex-row gap-[10px]">
+          <button @click="scrollTo('portfolio')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-mint shadow-md hover:opacity-75">
+            Mes projets
+          </button>
+          <button @click="scrollTo('about')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-white shadow-md hover:opacity-75">
+            à propos
+          </button>
           </div>
-          <div class=" items-center flex flex-col text-black">
-            <h2 class="p-[20px] text-center"> Présentation</h2>
-            <p class="text-justify p-[20px]">
-              Bonjour et bienvenue sur mon CV en ligne, ici, 
-              vous retrouverez mes compétences, projets que j'ai pu accomplir
-              ce cv évoluera au fur et à mesure de ma montée en compétence.
-            </p>
-          </div>
-        </article>
-      </section>
-      <TechnoList id="tech"/>
-      <aside class="md:grid grid-cols-2 lg:grid-cols-2">
-        <SoftSkillsList />
-        <LoisirsList />
-      </aside>
-    </div>
+        </div>
+    </article>
+    <TechnoList id="tech" class=""/>
+    <Apropos />
+    <PortfolioList />
   </main>
 </template>
