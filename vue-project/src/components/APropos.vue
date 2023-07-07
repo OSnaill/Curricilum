@@ -3,7 +3,7 @@
       <h2 class="p-[20px]"> A Propos </h2>
       <section class=" lg:grid items-center lg:grid-cols-4 gap-[20px] p-[20px]">
         <img src="../assets/img/road.png" alt="Road" class="h-[350px] w-full rounded-lg shadow-xl hidden lg:block">
-        <div class="col-span-3 w-full m-auto text-justify p-[20px] lg:h-[350px] bg-dark text-white rounded-lg border-[1px] shadow-xl"> 
+        <div class="col-span-3 flex flex-col justify-center w-full m-auto text-justify p-[20px] lg:h-[350px] bg-dark text-white rounded-lg border-[1px] shadow-xl"> 
           <h3 class="p-[20px]"> 
             Mon parcours
           </h3>
@@ -21,12 +21,14 @@
           </div>
         </div>
         <div class="col-span-4 flex flex-col md:flex-row gap-[20px] items-center w-full p-[20px] rounded-lg "> 
-          <h3 class="p-[20px]"> 
+            <h3 class=""> 
             Centres d'intérêts
-          </h3>
-          <img src="../assets/img/controller.png" alt="games" class="h-[50px] w-[50px] object-cover rounded-lg shadow-xl border-2 border-solid p-[5px]">
-          <img src="../assets/img/guitar.png" alt="guitar" class="h-[50px] w-[50px] object-cover rounded-lg shadow-xl border-2 border-solid p-[5px]">
-          <img src="../assets/img/haltere.png" alt="street" class="h-[50px] w-[50px] object-cover rounded-lg shadow-xl border-2 border-solid p-[5px]">
+            </h3>
+            <div class="flex flex-row gap-[20px]">
+                <img src="../assets/img/controller.png" alt="games" class="h-[50px] w-[50px] object-cover rounded-lg shadow-xl border-2 border-solid p-[5px]">
+                <img src="../assets/img/guitar.png" alt="guitar" class="h-[50px] w-[50px] object-cover rounded-lg shadow-xl border-2 border-solid p-[5px]">
+                <img src="../assets/img/haltere.png" alt="street" class="h-[50px] w-[50px] object-cover rounded-lg shadow-xl border-2 border-solid p-[5px]">
+            </div>
         </div>
       </section>
     </aside>

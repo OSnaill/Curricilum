@@ -28,6 +28,13 @@
                     <TechnoCard :imag="'insomnia.png'" :name='"Insomnia"' :rank="4" />
                 </div>
             </div>
+            <div class="w-full bg-white p-[20px] text-black rounded-md border-[1px] border-solid border-slate-300 md:col-span-3 ">
+                <h3 class="p-[20px] text-left"> In progress </h3>
+                <div class="  flex flex-col sm:flex-row gap-[20px]">
+                    <TechnoCard :imag="'flutter.png'" :name='"Flutter"' :rank="4" />
+                    <TechnoCard :imag="'dart.png'" :name='"Dart"' :rank="4" />
+                </div>
+            </div>
         </section>
     </article>
 </template>

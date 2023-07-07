@@ -41,9 +41,9 @@ export default {
         <div class=" flex flex-col gap-[20px] text-black max-w-[375px] p-[20px] m-auto">
           <h1 class=""> Hello There ! Je m'appelle <span class="text-mint">Souquière Boris </span></h1>
           <p class="text-justify ">
-            Je suis un développeur web full stack situé en bretagne. 👋
+            Je suis développeur web full stack situé en bretagne. 👋
           </p>
-          <div class="flex flex-row gap-[10px]">
+          <div class="flex flex-row gap-[20px]">
           <button @click="scrollTo('portfolio')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-mint shadow-md hover:opacity-75">
             Mes projets
           </button>

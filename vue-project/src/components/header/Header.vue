@@ -17,10 +17,10 @@
             </div>
         </div>
         <div class="flex-row items-center justify-center gap-[20px] hidden xl:flex">
-            <a href="#">
+            <a href="https://github.com/OSnaill" target="_blank">
                 <GitIcon class="w-[20px] h-[20px]"/>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/souquiere-boris/" target="_blank">
                 <LinkedinIcon class="w-[20px] h-[20px]"/>
             </a>
         </div>

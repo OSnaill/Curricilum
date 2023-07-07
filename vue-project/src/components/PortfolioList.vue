@@ -8,7 +8,7 @@
               <img src="../assets/img/street.jpg" alt="" class=" w-full h-full object-cover ">
             </div>
             <div class="text-black lg:p-[20px] lg:w-2/3 flex flex-col justify-center">
-              <h3 class="p-[20px]"> Titre du projet </h3>
+              <h3 class="p-[20px]"> Exemple de projet </h3>
               <div class="p-[20px]">
                 <p class="text-justify">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam quos iure aliquid saepe repellendus, eveniet vel laborum commodi rerum! Molestiae fuga voluptas optio officiis aperiam voluptatum suscipit, architecto veniam?
