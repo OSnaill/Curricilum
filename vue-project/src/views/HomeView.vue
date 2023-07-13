@@ -37,10 +37,10 @@ export default {
           Je suis développeur web full stack situé en bretagne. 👋
         </p>
         <div class="flex flex-row gap-[20px]">
-        <button @click="scrollTo('portfolio')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-mint shadow-md hover:opacity-75">
+        <button @click="scrollTo('portfolio')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-mint shadow-md hover:opacity-75 hover:rotate-1 duration-[0.1s]">
           Mes projets
         </button>
-        <button @click="scrollTo('about')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-white shadow-md hover:opacity-75">
+        <button @click="scrollTo('about')" class="border-2 border-black p-[10px] max-w-[120px] text-sm rounded-full font-bold bg-white shadow-md hover:opacity-75 hover:rotate-1 duration-[0.1s]">
           à propos
         </button>
         </div>
