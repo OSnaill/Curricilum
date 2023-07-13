@@ -2,7 +2,7 @@
     <header class="fixed top-0 z-10 w-full">
         <section class="flex flex-row p-[20px] justify-between bg-white">
         <div class="flex flex-row items-center gap-[10px]">
-            <div class="xl:hidden">
+            <div class="md:hidden">
                 <svg v-if="isNavOpen == false" @click="openNav()"  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-[35px] h-[35px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
@@ -16,7 +16,7 @@
                 </h2>
             </div>
         </div>
-        <div class="flex-row items-center justify-center gap-[20px] hidden xl:flex">
+        <div class="flex-row items-center justify-center gap-[20px] hidden md:flex">
             <a href="https://github.com/OSnaill" target="_blank">
                 <GitIcon class="w-[20px] h-[20px]"/>
             </a>
@@ -25,10 +25,10 @@
             </a>
         </div>
         </section>
-        <section class="" >
-            <div class="w-screen bg-black opacity-30 h-screen absolute xl:hidden" @click="closeNav()" v-if="isNavOpen" >
+        <section class="">
+            <div class="w-screen bg-black opacity-30 h-screen absolute md:hidden" @click="closeNav()" v-if="isNavOpen" >
             </div>
-            <transition name="slide-fade" class="xl:hidden relative">
+            <transition name="slide-fade" class="md:hidden relative">
                 <NavDrawer v-if="isNavOpen" class=" left-0 top-0" :isOpen="isNavOpen" />
             </transition>
         </section>

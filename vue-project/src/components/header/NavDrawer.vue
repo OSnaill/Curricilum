@@ -5,7 +5,7 @@
                 <GitIcon class="w-[20px] h-[20px] opacity-80"/> 
                 <p> Github </p>
             </a>
-            <a href="#" id="pres-link" class="p-[20px]  font-bold flex flex-row items-center align-baseline gap-[20px]" target="_blank">
+            <a href="https://www.linkedin.com/in/souquiere-boris/" id="pres-link" class="p-[20px]  font-bold flex flex-row items-center align-baseline gap-[20px]" target="_blank">
                 <LinkedinIcon class="w-[20px] h-[20px] opacity-80"/> 
                 <p> Linkedin </p>
             </a>
@@ -24,7 +24,6 @@ export default {
         isOpen: Boolean,
     },
     setup(props) {
-        console.log(props)
     },
     methods:{
         closeNav(){

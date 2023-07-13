@@ -9,14 +9,12 @@
           </h3>
           <div class="p-[20px] flex flex-col">
             <p class="text-white">
-              à l'issu de 6 mois de formation pour le titre 
-              <a href="https://www.francecompetences.fr/recherche/rncp/31114/" class="font-bold text-mint hover:text-dark-mint" target=”_blank”>
-              DWWM (Développeur Web et Web Mobile)</a>, j'ai enchainé sur une alternance pour obtenir le titre  <a href="https://www.francecompetences.fr/recherche/rncp/31678/" target=”_blank” class="font-bold text-mint hover:text-dark-mint">
-              Concepteur développeur d'application</a>. 
+              Après avoir suivi une formation intensive de 6 mois pour obtenir le titre de <a href="https://www.francecompetences.fr/recherche/rncp/31114/" class="font-bold text-mint hover:text-dark-mint" target=”_blank”> DWWM (Développeur Web et Web Mobile)</a>,
+              j'ai poursuivi avec une alternance afin d'acquérir le titre de <a href="https://www.francecompetences.fr/recherche/rncp/31678/" target=”_blank” class="font-bold text-mint hover:text-dark-mint"> Concepteur Développeur d'Applications. </a>
             </p>
             <br/>
             <p class="text-white">
-              En plus de mes formations et de mon expérience, je fais en sorte de rester compétitif en cherchant à m'améliorer.
+              Parallèlement à mes formations et à mon expérience, je m'efforce de maintenir un haut niveau de compétence en cherchant continuellement à me perfectionner.
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-black p-[10px]">
+  <footer class="bg-black p-[20px]">
     <div class="max-w-[1280px] m-auto text-white md:flex-row flex-col gap-[20px] flex justify-between p-[20px] flex-wrap items-center">
-        <section class="flex flex-col">
+        <section class="flex flex-col p-[20px]">
           <p class="text-white">
             contacts :
           </p>
@@ -14,6 +14,7 @@
           </p>
           <img src="/src/assets/img/html.png" alt="html" class="w-[25px] h-[25px]">
           <img src="/src/assets/img/css.png" alt="css" class="w-[25px] h-[25px]">
+          <img src="/src/assets/img/js.png" alt="js" class="w-[25px] h-[25px]">
           <img src="/src/assets/img/tailwind.png" alt="tailwind" class="w-[25px] h-[25px]">
           <img src="/src/assets/img/vue.png" alt="vue" class="w-[25px] h-[25px]">
         </section>

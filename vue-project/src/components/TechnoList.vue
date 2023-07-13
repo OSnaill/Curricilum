@@ -26,6 +26,7 @@
                     <TechnoCard :imag="'figma.png'" :name='"Figma"' :rank="4" />
                     <TechnoCard :imag="'github.png'" :name='"Github"' :rank="4" />
                     <TechnoCard :imag="'insomnia.png'" :name='"Insomnia"' :rank="4" />
+                    <TechnoCard :imag="'notion.png'" :name='"Notion"' :rank="4" />
                 </div>
             </div>
             <div class="w-full bg-white p-[20px] text-black rounded-md border-[1px] border-solid border-slate-300 md:col-span-3 ">
