@@ -11,7 +11,7 @@
     export default {
         data(){
             return {
-                url: '/src/assets/img/',
+                url: '/assets/img/',
                 rankArray: []
             }
         },
