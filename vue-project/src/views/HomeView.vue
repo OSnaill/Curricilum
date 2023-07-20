@@ -18,7 +18,6 @@ export default {
   },
   methods:{
     scrollTo(id){
-      console.log(id);
       let elementToScroll = document.getElementById(id);
       elementToScroll.scrollIntoView({behavior:'smooth', block:'start'});
     },
@@ -27,10 +26,10 @@ export default {
 </script>
 <template>
   <main>
-    <article class="p-[20px] flex flex-col items-center lg:flex-row lg:h-[800px] max-w-[1280px] m-auto">
+    <article class="p-[20px] flex flex-col items-center lg:flex-row lg:h-[600px] max-w-[1280px] m-auto pres">
       <section class="lg:w-1/2">
-          <img src="../assets/img/moi.png" alt="" class=" w-[200px] h-[200px] sm:w-[275px] sm:h-[275px] object-cover rounded-full shadow-2xl border-4 border-solid border-dark m-auto hover:rotate-[5deg] duration-100" id="pres">
-      </section>
+        <img src="../assets/img/moi.png" alt="" class=" w-[200px] h-[200px] sm:w-[275px] sm:h-[275px] object-cover rounded-full shadow-2xl border-4 border-solid border-dark m-auto hover:rotate-[5deg] duration-100" id="pres">
+        </section>
       <section class=" lg:w-1/2 flex flex-col gap-[20px] text-black max-w-[500px] p-[20px] m-auto">
         <h1 class=""> Hello There ! Je m'appelle <span class="text-mint">Souquière Boris </span></h1>
         <p class="text-justify ">

@@ -51,7 +51,10 @@
 
 @layer utilities {
   .pres{
-    background-image: url('./img/rectangle-pres.png');
+    background-image: url('./img/background.png');
+    background-size: contain;
+    background-position: 15% 20%;
+    background-repeat: no-repeat;
   }
 
   .try{
@@ -62,9 +65,4 @@
     border-right: 1px solid lightgray;
     font-weight: bold;
   }
-/* 
-  .page{
-    max-height: 100vh;
-    overflow-y: scroll;
-  } */
 }
